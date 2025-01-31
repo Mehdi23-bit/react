@@ -1,6 +1,13 @@
 .root{
     position: block;
 }
+.tic_tac{
+    display: block;
+}
+.tic_tac h1{
+   text-align: center;
+    margin-top: 100px;
+}
 .container{
     display: grid;
     grid-template-columns: 100px 100px 100px;
@@ -11,8 +18,11 @@
    gap: 0;
    margin-left: auto;
    margin-right: auto;
-   margin-top: 100px;
- }
+    }
+    .turn{
+        text-align: center;
+        font-weight: 800;
+    }
 .cell{
     background-color: aqua;
     border: solid 3px black;
