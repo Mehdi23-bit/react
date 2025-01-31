@@ -29,7 +29,7 @@ console.log(game)
     }
    }
    function isWon(x,y){
-return check(game[x] || check(extract(y,game)))
+return (check(game[x] ) || check(extract(y,game)))
     
 }
   
@@ -42,8 +42,8 @@ return check(game[x] || check(extract(y,game)))
          return true
         }
    function extract(y,array){
-    let newarry;
-    for(let i=0;i<array.length;i++){
+    let newarry=[];
+    for(let i=0;i<3;i++){
          newarry.push(array[i][y]) 
            }
          return newarry;
